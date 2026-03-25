@@ -18,6 +18,6 @@ namespace Poligon2026b
         {
             x = a;
             y = b;
-        }
+        }    
     }
 }

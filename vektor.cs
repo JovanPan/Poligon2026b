@@ -38,5 +38,10 @@ namespace poligon2026b
             tacka b1 = b.centriraj();
             return a1.x * b1.y - a1.y * b1.x; ;
         }
+        public double duzina() 
+        {
+            tacka druga = this.centriraj();
+            return druga.d();
+        }
     }
 }
