@@ -43,5 +43,6 @@ namespace poligon2026b
             tacka druga = this.centriraj();
             return druga.d();
         }
+
     }
 }

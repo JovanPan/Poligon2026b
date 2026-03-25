@@ -12,12 +12,16 @@ namespace Poligon2026b
         static void Main(string[] args)
         {
             //Jovan Pantić
+            /*
             tacka A = new tacka(2, 3);
             tacka B = new tacka(4, 5);
             tacka C = new tacka(6, 7);
             tacka D = new tacka(8, 9);
             vektor AB = new vektor(A, B);
             AB.stampaj();
+            */
+            poligon prvi = poligon.unos();
+            prvi.stampa();
         }
     }
 }
