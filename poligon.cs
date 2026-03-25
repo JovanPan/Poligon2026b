@@ -49,6 +49,7 @@ namespace poligon_2026_310B
                 izlaz.WriteLine(teme[i].x);
                 izlaz.WriteLine(teme[i].y);
             }
+            izlaz.Close();
         }
         static public poligon ucitaj()
         {
