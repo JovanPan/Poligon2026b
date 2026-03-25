@@ -26,5 +26,17 @@ namespace poligon2026b
             pocetak = a;
             kraj = b;
         }
+        public static double SP(vektor a, vektor b)
+        {
+            tacka a1 = a.centriraj();
+            tacka b1 = b.centriraj();
+            return a1.x * b1.x + a1.y * b1.y;
+        }
+        public static double VP(vektor a, vektor b)
+        {
+            tacka a1 = a.centriraj();
+            tacka b1 = b.centriraj();
+            return a1.x * b1.y - a1.y * b1.x; ;
+        }
     }
 }
