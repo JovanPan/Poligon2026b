@@ -11,7 +11,7 @@ namespace Poligon2026b
     {
         static void Main(string[] args)
         {
-            //Stefan Cupac
+            //Jovan Pantić
             /*
             tacka A = new tacka(2, 3);
             tacka B = new tacka(4, 5);
