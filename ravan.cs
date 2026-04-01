@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Poligon2026b
 {
-    class vektor
+    class ravan
     {
     }
 }

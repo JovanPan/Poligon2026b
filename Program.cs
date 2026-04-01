@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Poligon2026b;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace poligon_2026_310B
+namespace Poligon2026b
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //Jovan Pantić
+            //Stefan Cupac
             /*
             tacka A = new tacka(2, 3);
             tacka B = new tacka(4, 5);
@@ -20,16 +21,13 @@ namespace poligon_2026_310B
             AB.stampaj();
             */
             /*
-            poligon prvi = poligon.unos();
+            Poligon prvi = Poligon.unos();
             prvi.stampa();
             prvi.snimi();
             */
-            
-            poligon drugi = poligon.ucitaj();
+            Poligon drugi = Poligon.ucitaj();
             drugi.stampa();
-            
-            
-
+            Console.ReadKey();
         }
     }
 }
