@@ -19,6 +19,11 @@ namespace Poligon2026b
         {
             x = a;
             y = b;
-        }    
+        }
+        public static bool iste(tacka a, tacka b) 
+        {
+            if ((a.x == b.x) && (a.y == b.y)) return true;
+            else return false;
+        }
     }
 }
