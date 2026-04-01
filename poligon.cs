@@ -80,5 +80,9 @@ namespace Poligon2026b
             obim += a.duzina();
             return obim;
         }
+        public bool prost() 
+        {
+            return true;
+        }
     }
 }
