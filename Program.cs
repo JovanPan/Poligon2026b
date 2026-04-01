@@ -10,6 +10,7 @@ namespace poligon_2026_310B
     {
         static void Main(string[] args)
         {
+            //Jovan Pantić
             /*
             tacka A = new tacka(2, 3);
             tacka B = new tacka(4, 5);
