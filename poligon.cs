@@ -82,6 +82,15 @@ namespace Poligon2026b
         }
         public bool prost() 
         {
+            for (int i = 0; i < br_temena-1; i++) 
+            {
+                for(int j = i+1;j< br_temena; j++) 
+                {
+                    if (tacka.iste(teme[i], teme[j]) == true) return false;
+                }
+            }
+            vektor[] stranica = new vektor[br_temena];
+            
             return true;
         }
     }
