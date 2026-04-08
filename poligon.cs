@@ -93,5 +93,14 @@ namespace Poligon2026b
             
             return true;
         }
+        public bool konveksan() 
+        {
+            return true;
+
+        }
+        public double povrsina() 
+        {
+            return 0;
+        }
     }
 }
