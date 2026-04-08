@@ -40,6 +40,8 @@ namespace Poligon2026b
             Console.WriteLine(AB.sece(CD));
             */
             Poligon prvi = Poligon.unos();
+            if (prvi.prost()) { Console.WriteLine(prvi.povrsina()); }
+            else { Console.WriteLine("nije prost"); }
             Console.WriteLine(prvi.konveksan());
         }
     }
