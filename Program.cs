@@ -30,6 +30,7 @@ namespace Poligon2026b
             drugi.stampa();
             Console.ReadKey();
             */
+            /*
             tacka A = new tacka(1, 1);
             tacka B = new tacka(5, 1);
             tacka C = new tacka(2, 6);
@@ -37,7 +38,9 @@ namespace Poligon2026b
             vektor AB = new vektor(A, B);
             vektor CD = new vektor(C, D);
             Console.WriteLine(AB.sece(CD));
-            
+            */
+            Poligon prvi = Poligon.unos();
+            Console.WriteLine(prvi.konveksan());
         }
     }
 }
