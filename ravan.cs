@@ -18,6 +18,5 @@ namespace Poligon2026b
             if (aAC * aAB < 0) return 1;
             return 0;
         }
-
     }
 }
