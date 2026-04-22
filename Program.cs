@@ -71,11 +71,20 @@ namespace Poligon2026b
             // pravougaonik:
             // ab = cd, bc = da
             // ab L bc
-
+            if ((ab_len == cd_len) && (bc_len = da_len)) 
+            
+                if(vektor.SP(ab,bc)== 0) Console.WriteLine("jeste pravugaonik");
+                else Console.WriteLine("nije pravougaonik");
+            
+            else Console.WriteLine("nije pravougaonik");
             // deltoid:
             // ab = ad & bc = cd
             // ab = bc & cd = da
-
+            if ((ab_len == ad_len) && (bc_len = cd_len)) 
+            
+                if ((ab_len = bc_len)&&(cd_len == da_len)) Console.WriteLine("jeste deltoid");
+                else Console.WriteLine("nije deltoid");
+            
         }
     }
 }
