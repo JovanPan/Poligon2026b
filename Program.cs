@@ -84,15 +84,20 @@ namespace Poligon2026b
             
                 if ((ab_len == bc_len)&&(cd_len == da_len)) Console.WriteLine("jeste deltoid");
                 else Console.WriteLine("nije deltoid");
-            // pravougli trapez 
-            if ((vektor.VP(ab, cd) == 0) || (vektor.VP(bc, da) == 0))
+            // pravougli trapez: 
+            bool baze1 = vektor.VP(ab, cd) == 0;
+            bool baze2 = vektor.VP(bc, da) == 0; 
+
+            if (baze1 || baze2)
             {
                 if (vektor.SP(ab, bc) == 0 || vektor.SP(bc, cd) == 0 || vektor.SP(cd, da) == 0 || vektor.SP(da, ab) == 0)
                 {
-                    Console.WriteLine("jeste pravougli trapez");
+                    if (!(baze1 && baze2)){Console.WriteLine("jeste pravougli trapez");}
+                    else{Console.WriteLine("nije pravougli trapez ");}
                 }
+                else{Console.WriteLine("nije pravougli trapez");}
             }
-            else{ Console.WriteLine("nije trapez");}
+            else{Console.WriteLine("nije pravougli trapez");}
         }
     }
 }
