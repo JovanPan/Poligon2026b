@@ -48,7 +48,7 @@ namespace Poligon2026b
            else Console.WriteLine("nije prost");
            */
             tacka A = new tacka(1, 1);
-            tacka B = new tacka(3, 1);
+            tacka B = new tacka(3, 0);
             tacka C = new tacka(3, 5);
             tacka D = new tacka(1, 2);
             vektor ab = new vektor(A, B);
@@ -80,10 +80,13 @@ namespace Poligon2026b
             // deltoid:
             // ab = ad & bc = cd
             // ab = bc & cd = da
-            if ((ab_len == da_len) && (bc_len == cd_len)) 
-            
-                if ((ab_len == bc_len)&&(cd_len == da_len)) Console.WriteLine("jeste deltoid");
+            if ((ab_len == da_len) && (bc_len == cd_len))
+            {
+
+                if ((ab_len == bc_len) && (cd_len == da_len)) Console.WriteLine("jeste deltoid");
                 else Console.WriteLine("nije deltoid");
+            }
+            else Console.WriteLine("nije deltoid");
             // pravougli trapez: 
             bool baze1 = vektor.VP(ab, cd) == 0;
             bool baze2 = vektor.VP(bc, da) == 0; 
