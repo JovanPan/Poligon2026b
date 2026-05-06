@@ -48,13 +48,14 @@ namespace Poligon2026b
            else Console.WriteLine("nije prost");
            */
             tacka A = new tacka(1, 1);
-            tacka B = new tacka(3, 0);
+            tacka B = new tacka(3, 1);
             tacka C = new tacka(3, 5);
-            tacka D = new tacka(1, 2);
+            tacka D = new tacka(1, 5);
             vektor ab = new vektor(A, B);
             vektor bc = new vektor(B, C);
             vektor cd = new vektor(C, D);
             vektor da = new vektor(D, A);
+            tacka[] temena = { A, B, C, D };
             double ab_len = ab.duzina();
             double bc_len = bc.duzina();
             double cd_len = cd.duzina();
@@ -101,6 +102,23 @@ namespace Poligon2026b
                 else{Console.WriteLine("nije pravougli trapez");}
             }
             else{Console.WriteLine("nije pravougli trapez");}
+            int br_temena = temena.Length;
+
+            double plus = 0;
+            double minus = 0;
+            for (int i = 0; i < br_temena; i++)
+            {
+                double x1 = temena[i].x;
+                double y1 = temena[i].y;
+                double x2 = temena[(i + 1) % br_temena].x;
+                double y2 = temena[(i + 1) % br_temena].y;
+                plus += x1 * y2;
+                minus += y1 * x2;
+            }
+
+            double povrsina = Math.Abs((plus - minus) / 2.0);
+
+            Console.WriteLine("Površina je: " + povrsina);
         }
     }
 }
